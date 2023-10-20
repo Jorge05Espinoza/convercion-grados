@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conversor de Temperatura</title>
+</head>
+<body>
+    <h1>Conversor de Temperatura</h1>
+    <!--Se crea un formulario en el cual se trabaja -->
+    <form>
+        <!--solicitar datos --> 
+        <p>Ingresa la temperatura</p>
+        <input type="number" name="grados" id="grados" step="0.01" required>
+        <!-- Elejir opcion -->
+        <p>Elige la unidad de temperatura a la que deseas convertir:</p>
+        <select name="Opcion" id="Opcion">
+            <option value="elija" hidden selected>Selecciona una opción</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+            <option value="centigrados">Centigrados</option>
+        </select>
+
+        <button type="button" onclick="convertirTemperatura()">Convertir</button>
+
+        <p>Resultado: <span id="resultado"></span></p>
+
+    </form>
+    <!-- Se manda a llamar el js -->
+    <script src="script.js"></script>
+</body>
+</html>
